@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "269028709537",
+    "project_id": "nalata-bab2a",
+    "storage_bucket": "nalata-bab2a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269028709537:android:c69cd02f4a7f7d7a714ce0",
+        "android_client_info": {
+          "package_name": "com.example.nalata"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdYm8uBp_P9bOVSTHBVPaA25jOmYJrMG8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
