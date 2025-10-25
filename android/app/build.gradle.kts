@@ -8,7 +8,9 @@ plugins {
 android {
     namespace = "com.example.nalata"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+
+    // 🔧 Define o NDK compatível com os plugins Firebase
+    ndkVersion = "27.0.12077973"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -21,7 +23,10 @@ android {
 
     defaultConfig {
         applicationId = "com.example.nalata"
-        minSdk = flutter.minSdkVersion
+
+        // 🔧 Define manualmente o minSdk = 23
+        minSdk = 23
+
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
@@ -34,16 +39,11 @@ android {
     }
 }
 
-dependencies {
-    // Firebase BOM — use sem versões nas dependências Firebase específicas
-    implementation(platform("com.google.firebase:firebase-bom:34.3.0"))
-    // exemplo: implementation("com.google.firebase:firebase-auth-ktx")
-}
 
-// indica onde está o projeto Flutter
+
 flutter {
     source = "../.."
 }
 
-// no Kotlin DSL, aplique o plugin do Google Services assim (no final do arquivo)
+// 🔧 Importante — plugin do Google Services no final
 apply(plugin = "com.google.gms.google-services")
